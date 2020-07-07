@@ -1,0 +1,15 @@
+node_modules
+bower
+
+/build
+/dist
+
+.directory
+.idea
+*.log
+
+/**/sass-cache
+#/**/*.map
+/**/.remote-profile/*
+
+/nbproject/private/

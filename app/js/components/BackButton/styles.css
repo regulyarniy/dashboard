@@ -1,0 +1,15 @@
+.icon {
+  transform: rotate(90deg);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+  margin-right: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

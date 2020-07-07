@@ -1,0 +1,16 @@
+.icon {
+  transition: opacity 0.3s;
+  path {
+    transition: fill 0.3s;
+    fill: #4db2ff;
+  }
+  &.active {
+    path {
+      fill: #4c4c4c;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

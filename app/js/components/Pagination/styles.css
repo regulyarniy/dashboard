@@ -1,0 +1,39 @@
+.pagination {
+  min-width: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  background-image: url('./icons.png');
+  background-position: -6px -487px;
+  background-repeat: no-repeat;
+  width: 30px;
+  flex-basis: 35px;
+  height: 30px;
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+.first {
+  background-position: -6px -483px;
+}
+
+.prev {
+  background-position: -4px -403px;
+}
+
+.next {
+  background-position: -42px -403px;
+}
+
+.last {
+  background-position: -43px -483px;
+}

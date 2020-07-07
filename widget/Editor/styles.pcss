@@ -1,0 +1,143 @@
+:host {
+  a {
+    color: #428bca;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  :global(.pell) {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e1e7eb;
+    padding: 40px 10px 10px 10px;
+    background-color: #ffffff;
+    margin-top: 5px;
+
+    @media (max-width: 1440px) {
+      padding: 40px 8px 8px 8px;
+    }
+  }
+
+  :global(.pell-content) {
+    min-width: 340px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: text;
+    display: block;
+    resize: none;
+    outline: none;
+    font: 300 16px Roboto, sans-serif;
+    font-weight: normal;
+    color: #4c4c4c;
+    transition: all 0.3s;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    &::-webkit-scrollbar-button {
+      display: none;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f0f0f0;
+      border-radius: 1px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 1px;
+    }
+
+    @media (max-width: 1440px) {
+      font-size: 13px;
+      line-height: 14px;
+      padding: 8px;
+      min-height: 32px;
+    }
+  }
+
+  :global(.pell-actionbar) {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  :global(.pell-button) {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    width: 20px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: solid 1px #e6e7e9;
+    transition: border 0.3s;
+    min-height: 0;
+    cursor: pointer;
+
+    svg {
+      transition: fill 0.3s;
+    }
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled),
+    &:active:not(:disabled) {
+      outline: none;
+      background-color: transparent;
+      box-shadow: none;
+      border-radius: 3px;
+      border: solid 1px #3d8ecc;
+      svg {
+        fill: #3d8ecc;
+      }
+    }
+  }
+
+  :global(.pell-button-selected) {
+    svg {
+      fill: #3d8ecc;
+    }
+  }
+
+  .radioGroup {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .radioWrapper {
+    min-height: 40px;
+    min-width: 50px;
+    margin-right: 30px;
+  }
+
+  .label {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: normal;
+    color: #999999;
+
+    @media (max-width: 1440px) {
+      font-size: 13px;
+    }
+  }
+
+  .controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .controlButton {
+    margin-left: 20px;
+  }
+}

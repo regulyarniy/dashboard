@@ -1,0 +1,8 @@
+// Обьявления миксинов
+@define-mixin icon $name {
+  padding-left: 16px;
+  &::after {
+    content: '';
+    background: url(https://via.placeholder.com/150/$name);
+  }
+}

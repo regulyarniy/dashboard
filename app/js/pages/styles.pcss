@@ -1,0 +1,90 @@
+.page {
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60px;
+  padding: 5px 15px;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-width: 500px;
+  min-height: 36px;
+
+  &.short {
+    min-width: 315px;
+  }
+
+  button {
+    flex-shrink: 0;
+  }
+}
+
+.slotPlaceholder {
+  width: 200px;
+}
+
+.searchWrapperText {
+  color: var(--module-color-slate-50);
+  font-size: var(--font-size-small-text);
+}
+
+.fullWidthLabel {
+  color: var(--module-color-slate-50);
+  font-size: var(--font-size-small-text);
+  width: 100%;
+}
+
+.searchField {
+  margin-left: 40px;
+}
+
+.headerSelect {
+  margin-left: 20px;
+  width: 210px;
+  @media (max-width: 1440px) {
+    width: 180px;
+  }
+}
+
+.filtersButton.filtersButton {
+  margin-left: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-title-h1);
+  font-weight: 400;
+}
+
+.backButton {
+  margin-right: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.headerButton.headerButton {
+  margin-left: 20px;
+}

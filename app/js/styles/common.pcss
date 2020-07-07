@@ -1,0 +1,59 @@
+// Глобальные и общие стили
+@media print {
+  @page {
+    size: landscape;
+  }
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: var(--module-color-greyish-brown);
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+table {
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: dotted thin;
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-offset: -2px;
+}
+
+button {
+  cursor: pointer;
+}
+
+:global(.DraftEditor-editorContainer) {
+  z-index: unset; /* фикс показа текста поверх сайдбара на маленьких разрешениях */
+}

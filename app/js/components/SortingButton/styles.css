@@ -1,0 +1,53 @@
+.button {
+  border: none;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  color: var(--module-color-slate-50);
+  position: relative;
+  padding: 0 20px 0 0;
+  transition: color 0.3s;
+  text-align: unset;
+
+  &.active {
+    color: var(--module-color-greyish-brown);
+  }
+
+  .chevron {
+    color: var(--module-color-grey);
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    transition: color 0.3s;
+
+    &.chevronActive {
+      color: var(--module-color-sky-blue);
+    }
+  }
+
+  .up {
+    transform: rotate(180deg);
+    top: calc(50% - 14px);
+  }
+
+  .down {
+    bottom: calc(50% - 14px);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--module-color-sky-blue);
+  }
+}

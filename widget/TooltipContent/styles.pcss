@@ -1,0 +1,54 @@
+:host {
+  a {
+    color: #428bca;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .content {
+    position: relative;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #aeafb4;
+    border-radius: 4px;
+    font: 300 16px Roboto, sans-serif;
+    font-weight: normal;
+    min-height: 60px;
+    min-width: 60px;
+    max-width: 400px;
+    @media (max-width: 1440px) {
+      font-size: 13px;
+      line-height: 14px;
+      padding: 8px;
+    }
+  }
+
+  .edit {
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .loading {
+    color: #428bca;
+  }
+}
